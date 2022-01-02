@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            website layout with image gallery
+        </title>
+        <style>
+            body{
+                margin: 0;
+             background:  linear-gradient(to right, #FFAAAA, #734C8F);   
+            }
+            nav{
+                background: #594848;
+                width: 100%;
+                height: 60px;
+                position: fixed;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            li{
+                float: left;
+            }
+            #logo{
+                font-size: 40px;
+                margin-top: 2px;
+                font-family: Comic Sans MS;
+                color: white;
+            }
+            #logo2{
+                font-size: 40px;
+                margin-top: 2px;
+                font-family: Comic Sans MS;
+                color: red;
+            }            
+            nav{
+                font-size: 30px;
+                text-align: center;
+                padding-top: none;
+                z-index: 100;
+                
+            }
+            #search-box{
+                width:450px;
+                height:40px;
+                border-style:none;
+                box-sizing:border-box;
+                float:left;
+                padding:5px;
+                font-size:15px; 
+                margin-top:9px;
+                border-radius: 6px;
+            }
+            #search-btn
+            {
+            border-style:none;
+            height:40px;
+            width:100px;
+            box-sizing:border-box;
+            float:left;
+            margin-left:3px;
+            background-color:white;
+            margin-top:9px;
+            border-radius: 6px;
+            }
+            nav a{
+                width: 120px;
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                background: #594848;
+                font-size: 17px;
+                color: white;
+                padding: 20px 10px;
+                font-family: Arial;
+            }
+            nav a:hover{
+                background: skyblue;
+                color: black;
+            }
+            nav input[type=text]{
+                 float: center;
+                 padding: 6px;
+                 border: none;
+                 margin-top: 13px;
+                 margin-right: 16px;
+                 font-size: 17px;
+            }
+            .container{
+                max-width:2500px;
+                margin: auto;
+                background: #f2f2f2;
+                overflow: auto;
+            }
+            .gallery{
+                margin:5px;
+                border: 1px solid #ccc;
+                float:left;
+                width:290px;
+            }
+            .gallery img{
+                width:300px;
+                height:auto;
+            }
+            #new-releases{
+                padding-top: 230px;
+            }
+            .desc{
+                padding: 15px;
+                text-align: center;
+            }
+            .end
+            {
+                width:100%;
+                height:350px;
+                box-sizing:border-box;
+                background-color: rgb(41, 39, 39);
+                padding:30px;
+                color:#f2f2f2;
+                font-family: Comic Sans MS;
+                
+            }
+        </style>
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="website-font.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+              <li id="logo">Gaana</li>
+              <li id="logo2">World</li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">New Songs</a></li>
+              <li><a href="#">Old Songs</a></li>
+              <li><a href="#">Video</a></li>
+              <input type="search" name="search" id="search-box" placeholder="Type Something to Search..." />
+              <input type="submit" value="Search Now" id="search-btn" />
+              <li><a href="login.html">Login/Signup</a></li>
+        </nav>
+
+        <div class="container2">
+            <div class="wrapper">
+                <img src="banner\BANNER1.jpg" id="banner">
+                <img src="banner\BANNER2.jpg" id="banner">
+                <img src="banner\BANNER3.jpg" id="banner">
+                <img src="banner\BANNER4.jpg" id="banner">
+            </div>
+        </div>
+
+        <header>
+            <h4 id="new-releases">New Releases</h4>
+        </header>
+        <main>
+            <div class="box">
+            <div class="photo"><a href="new-english.html"><img src="english.jpg"></a></div>
+                <div class="desc">New English...</div>
+        </div>
+        <div class="box">
+            <div class="photo"><a href="new-hindi.html"><img src="hindi.jpg"></a></div>
+            <div class="desc">New Hindi</div>
+    </div>
+    <div class="box">
+        <div class="photo"><a href="new-bengali.html"><img src="bengali.jpg"></a></div>
+        <div class="desc">New Bengali...</div>
+</div>
+<div class="box">
+    <div class="photo"><a href="new-punjabi.html"><img src="panjbi.jpg"></a></div>
+    <div class="desc">New Punjabi...</div>
+</div>
+<div class="box">
+    <div class="photo"><a href="new-tamil.html"><img src="tamil.jpg"></a></div>
+    <div class="desc">New Tamil...</div>
+</div>
+</main>
+<br>
+<header>
+    <h4>Top Charts</h4>
+</header>
+<main>
+    <div class="box">
+        <div class="photo"><img src="D:\practice\Ganna World\weekly top\top1.jpg"></div>
+        <div class="desc">Weekly Top:English...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\weekly top\top2.jpg"></div>
+    <div class="desc">Weekly Top:Punjabi...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\weekly top\top3.jpg"></div>
+<div class="desc">Weekly Top:Bengali...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\weekly top\top4.jpg"></div>
+<div class="desc">Weekly Top:Hindi...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\weekly top\top5.jpg"></div>
+<div class="desc">Retro Top:Bengali...</div>
+</div>
+</main>
+<br>
+<header>
+    <h4>Romantic Song</h4>
+</header>
+<main>
+    <div class="box">
+        <div class="photo"><img src="english.jpg"></div>
+        <div class="desc">English...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="hindi.jpg"></div>
+    <div class="desc">New Hindi</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="bengali.jpg"></div>
+<div class="desc">New Bengali...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="panjbi.jpg"></div>
+<div class="desc">New Punjabi...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="tamil.jpg"></div>
+<div class="desc">New Tamil...</div>
+</div>
+</main>
+<br>
+<header>
+    <h4>Sad Song</h4>
+</header>
+<main>
+    <div class="box">
+        <div class="photo"><img src="english.jpg"></div>
+        <div class="desc">New English...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="hindi.jpg"></div>
+    <div class="desc">New Hindi</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="bengali.jpg"></div>
+<div class="desc">New Bengali...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="panjbi.jpg"></div>
+<div class="desc">New Punjabi...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="tamil.jpg"></div>
+<div class="desc">New Tamil...</div>
+</div>
+</main>
+<br>
+<header>
+    <h4>Album Song</h4>
+</header>
+<main>
+    <div class="box">
+        <div class="photo"><img src="english.jpg"></div>
+        <div class="desc">New English...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="hindi.jpg"></div>
+    <div class="desc">New Hindi</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="bengali.jpg"></div>
+<div class="desc">New Bengali...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="panjbi.jpg"></div>
+<div class="desc">New Punjabi...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="tamil.jpg"></div>
+<div class="desc">New Tamil...</div>
+</div>
+</main>
+<br>
+<header>
+    <h4>Artist Song</h4>
+</header>
+<main>
+    <div class="box">
+        <div class="photo"><img src="english.jpg"></div>
+        <div class="desc">New English...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="hindi.jpg"></div>
+    <div class="desc">New Hindi</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="bengali.jpg"></div>
+<div class="desc">New Bengali...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="panjbi.jpg"></div>
+<div class="desc">New Punjabi...</div>
+</div>
+<div class="box">
+<div class="photo"><img src="tamil.jpg"></div>
+<div class="desc">New Tamil...</div>
+</div>
+</main>
+<br>
+<header>
+    <h4>Videos</h4>
+</header>
+<main>
+    <div class="box">
+        <div class="photo"><img src="english.jpg"></div>
+        <div class="desc">English Music Video...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="hindi.jpg"></div>
+    <div class="desc">Hindi Music Video...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="bengali.jpg"></div>
+<div class="desc">Bengali Music Video...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="panjbi.jpg"></div>
+<div class="desc">Punjabi Music Video...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="tamil.jpg"></div>
+<div class="desc">Tamil Music Video...</div>
+</div>
+</main>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="end">
+    <center>
+    <h1><u>Integrated Project-CA150</u></h1>
+    <br>
+    <h1><u>CHITKARA UNIVERSITY</u></h1>
+    <br>
+    Project Guidance-:Mr.Rinku Saini
+    <br>
+    <u>Tem Members</u>
+    <br>
+    Developed By-:Pabitra Dhara
+    <br>
+    University Id-:2113986013
+    <br>
+    Developed By-:Pritish Ghosh
+    <br>
+    University Id-:2113986015
+    <br>
+    Developed By-:Rabi Kumar Sahu
+    <br>
+    University Id-:2113986045
+    </center>
+</div>
+    </body>
+</html>
