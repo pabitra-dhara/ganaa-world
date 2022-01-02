@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>
+audio page
+</title>
+<style>
+    body{
+    background:  linear-gradient(to right, #FFAAAA, #734C8F);
+    }
+    
+    .box{
+    display: block;
+    float: left;
+    width: 250px;
+    padding: 10px;
+    padding-left: 12px;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+h1{
+    font-family: cursive;
+    font-size: 30px;
+    text-decoration: underline;
+    float: center;
+    padding: 12px;
+}
+#music-list{
+    list-style-type: none;
+}
+#play audio{
+    width: 70%;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li id="logo">Gaana</li>
+          <li id="logo2">World</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New Songs</a></li>
+          <li><a href="#">Old Songs</a></li>
+          <li><a href="#">Video</a></li>
+          <input type="search" name="search" id="search-box" placeholder="Search Music" />
+          <input type="submit" value="Search Now" id="search-btn" />
+          <li><a href="#">Login/SignUp</a></li>
+       </ul>
+    </nav>
+
+    <div class="box">
+        <img src="bengali.jpg">
+        </div>
+        <h1>New Bengali Songs</h1>
+
+        <ul id="music-list">
+<li id="play"><audio autoplay="" controls="">
+<source src="mu.mp3" type="audio/mpeg">
+</source>
+</audio></li>
+<li ><audio autoplay="" controls="">
+    <source src="mu.mp3" type="audio/mpeg">
+    </source>
+    </audio></li>
+   <li><audio autoplay="" controls="">
+        <source src="mu.mp3" type="audio/mpeg">
+        </source>
+        </audio></li>
+        <li><audio autoplay="" controls="">
+            <source src="mu.mp3" type="audio/mpeg">
+            </source>
+            </audio></li>
+        </ul>
+</body>
+</html>
